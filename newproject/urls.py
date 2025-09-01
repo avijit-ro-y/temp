@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from tasks.views import home
-
+from debug_toolbar.toolbar import debug_toolbar_urls
+from users.views import home
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("home/", home),
-    path("tasks/",include("tasks.urls"))
+    path("tasks/",include("tasks.urls")),
+    path("users/",include('users.urls')),
+    path("",home,name="home"),   
 
-]
+] + debug_toolbar_urls()

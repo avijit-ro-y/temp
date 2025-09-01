@@ -1,0 +1,158 @@
+            {% extends "dashboard/dashboard.html" %}
+            {% block tasks %}
+            
+            <!-- lower -->
+            <div class="flex grid grid-cols-2 gap-4">
+                <!-- left table -->
+                <div class="bg-white rounded-xl shadow-sm border-b border-gray-100 text-sm text-gray-500 p-6">
+                    <div class="grid grid-cols-2">
+                        <h2 class="font-bold mb-2">Todays task</h2>
+                    </div>
+                    <!-- task item -->
+                    <div class="divide-y divide-gray-500 mb-4">
+                        <div class="grid grid-cols-2">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                                <div>
+                                    <span>Complete project proposal</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="bx-3 rounded-full text-gray-500 text-sm">High</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- task item -->
+                    <div class="divide-y divide-gray-500 mb-4">
+                        <div class="grid grid-cols-2 ">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-orange-500"></div>
+                                <div>
+                                    <span>Complete project proposal</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="bx-3 rounded-full text-gray-500 text-sm">Normal</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- task item -->
+                    <div class="divide-y divide-gray-500 mb-1">
+                        <div class="grid grid-cols-2 ">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                <div>
+                                    <span>Complete project proposal</span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="bx-3 rounded-full text-gray-500 text-sm">Low</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- righr table -->
+                <div class="bg-white rounded-xl shadow-sm border-b border-gray-100 text-sm text-gray-500 p-6">
+                    <h2 class="font-bold mb-2">All task</h2>
+                    <div class="grid grid-cols-4">
+                        <div>Task title</div>
+                        <div>Priority</div>
+                        <div>Team</div>
+                        <div>Created</div>
+                    </div>
+                    <!-- task item -->
+                    <div class="divide-y divide-gray-500 mb-1">
+                        <div class="grid grid-cols-4 ">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-green-500"></div>
+                                <div>
+                                    <span>
+                                        Test Low Task
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="bx-3 rounded-full bg-blue-100 text-blue-600 text-sm">Low</span>
+                            </div>
+                            <div>
+                                <div class="flex -space-x-2">
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">9 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divide-y divide-gray-500 mb-1">
+                        <div class="grid grid-cols-4 ">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-orange-500"></div>
+                                <div>
+                                    <span>
+                                        Test Task
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="bx-3 rounded-full bg-gray-200 text-blue-600 text-sm">Low</span>
+                            </div>
+                            <div>
+                                <div class="flex -space-x-2">
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">9 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divide-y divide-gray-500 mb-1">
+                        <div class="grid grid-cols-4 ">
+                            <div class="flex items-center gap-2">
+                                <div class="w-2 h-2 rounded-full bg-blue-500"></div>
+                                <div>
+                                    <span>
+                                        Test Task
+                                    </span>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="bx-3 rounded-full bg-red-200 text-blue-600 text-sm">Low</span>
+                            </div>
+                            <div>
+                                <div class="flex -space-x-2">
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                    <div class="w-8 h-8 rounded-full bg-blue-500 flex items-center justify-center text-white text-sm boredr-2 border-white">CA</div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="text-gray-500">9 months ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </div>
+            {% endblock tasks %}
